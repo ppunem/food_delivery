@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../Context/StoreContext'
 import { assets } from '../../assets/assets';
-import { useNavigate } from 'react-router-dom';
 
 const PlaceOrder = () => {
 
@@ -19,8 +18,7 @@ const PlaceOrder = () => {
     })
 
     const { getTotalCartAmount, placeOrder } = useContext(StoreContext);
-
-    const navigate = useNavigate();
+    
 
     const onChangeHandler = (event) => {
         const name = event.target.name
@@ -28,11 +26,7 @@ const PlaceOrder = () => {
         setData(data => ({ ...data, [name]: value }))
     }
 
-    useEffect(() => {
-        if (getTotalCartAmount() === 0) {
-            navigate('/')
-        }
-    }, [])
+    
 
     return (
         <div className='place-order'>

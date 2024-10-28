@@ -68,6 +68,16 @@
     border-radius: 4px;
     cursor: pointer;
 }
+.cart-total a {
+    border: none;
+    color: white;
+    background-color: #FF4C24;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
 
 .cart-promocode {
     flex: 1;
