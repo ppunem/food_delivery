@@ -17,7 +17,7 @@ const PlaceOrder = () => {
         phone: ""
     })
 
-    const { getTotalCartAmount, placeOrder } = useContext(StoreContext);
+    const { getTotalCartAmount } = useContext(StoreContext);
     
 
     const onChangeHandler = (event) => {
@@ -62,10 +62,10 @@ const PlaceOrder = () => {
                 <div className="payment-options">
                     <h2>Select Payment Method</h2>
                     <div className="payment-option">
-                        <img src={assets.selector_icon} alt="" />
+                        <img src={assets.selector_icon} alt="selector icon" />
                         <p>COD ( Cash On Delivery )</p>
                     </div>
-                    <button onClick={() => placeOrder(data)}>PLACE ORDER</button>
+                    <button>PLACE ORDER</button>
                 </div>
 
             </div>

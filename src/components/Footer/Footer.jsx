@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
-import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
   return (
@@ -9,11 +9,11 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>At Tomato, we’re committed to delivering fresh, delicious meals straight to your doorstep. Our platform brings you a wide range of cuisines and local favorites from top-rated restaurants, making it easy to enjoy great food anytime, anywhere. With our reliable delivery and easy ordering process, we prioritize quality, speed, and convenience to enhance your dining experience. Thank you for choosing us for your food cravings. Bon appétit!</p>
             <div className="footer-social-icons">
-                <img src={assets.facebook_icon} alt="" />
-                <img src={assets.twitter_icon} alt="" />
-                <img src={assets.linkedin_icon} alt="" />
+                <img src={assets.facebook_icon} alt="facebook" />
+                <img src={assets.twitter_icon} alt="twitter" />
+                <img src={assets.linkedin_icon} alt="linkedin" />
             </div>
         </div>
         <div className="footer-content-center">

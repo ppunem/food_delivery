@@ -8,11 +8,15 @@
     padding: 20px 8vw;
     padding-top: 80px;
 }
-.footer-content{
+ .footer-content{  
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 80px;
+}
+
+.footer-content-center{
+    list-style-type: none;
 }
 .footer-content-left , .footer-content-center , .footer-content-right {
     display: flex;
